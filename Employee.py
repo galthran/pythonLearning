@@ -1,11 +1,11 @@
 class Employee:
 
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        self._name = name
+        self._age = age
 
     def display(self):
-        print(self.name, self.age)
+        print(self._name, self._age)
 
     @property
     def age(self):
